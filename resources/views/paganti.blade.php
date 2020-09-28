@@ -8,7 +8,7 @@
           {{ $pagante -> name }} {{ $pagante -> lastname }}
         </span>
         <a class="delete" href="{{ route('paganti.destroy', $pagante -> id) }}"> DELETE </a>
-        <a class="edit" href="#"> EDIT </a>
+        <a class="edit" href="{{ route('paganti.edit', $pagante -> id) }}"> EDIT </a>
       </li>
     @endforeach
   </ul>
