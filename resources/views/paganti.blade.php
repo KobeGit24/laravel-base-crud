@@ -4,7 +4,11 @@
   <ul>
     @foreach ($paganti as $pagante)
       <li>
-        {{ $pagante -> name }} {{ $pagante -> lastname }}
+        <span>
+          {{ $pagante -> name }} {{ $pagante -> lastname }}
+        </span>
+        <a class="delete" href="{{ route('paganti.destroy', $pagante -> id) }}"> DELETE </a>
+        <a class="edit" href="#"> EDIT </a>
       </li>
     @endforeach
   </ul>

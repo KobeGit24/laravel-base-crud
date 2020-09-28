@@ -13,4 +13,12 @@ class PagantiController extends Controller
 
     return view('paganti', compact('paganti'));
   }
+
+  public function destroy($id) {
+
+    $paganti = Pagante::findOrFail($id);
+    $paganti -> delete();
+
+    return redirect() -> route('paganti.index');
+  }
 }

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
-      <div class="">
+      <div class="container">
         @include('partials.header')
         @yield('section')
         @include('partials.footer')
